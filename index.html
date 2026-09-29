@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="assents/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="assents/img/undraw_healthy-habit_2ata (1).svg" alt="">
+        </section>
+        <section id="calcular">
+            <form id="form">
+                <h1>CALCULADORA DE IMC</h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em kg
+                    </label>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" required step="0.01">
+                        <span>
+                            kg
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="input-box">
+                    <label for="alto">
+                        Altura em Metros
+                    </label>
+
+                    <div class="input-field">
+                        <i class="fa-duotone fa-solid fa-ruler"></i>
+                        <input type="number" id="alto" required step="0.01">
+                        <span>
+                            M
+                        </span>
+                    </div>
+                </div>
+
+                <button class="calcular">
+                    Calcular
+                </button>
+            </form>
+
+            <div id="info">
+                <div id="resultado">
+                    <div id="imc">
+                        <span id="values"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="descricao">
+                        <span id="descricao-texto"></span>
+                    </div>
+                </div>
+                <div id="mais-info">
+                    <a href="https://www.tuasaude.com/imc/">Para mais informações sobre IMC</a>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assents/js/main.js"></script>
+</body>
+
+</html>
